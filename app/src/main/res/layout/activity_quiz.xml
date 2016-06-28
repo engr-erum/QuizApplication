@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtquizheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUESTION NO. #"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/txtquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    Are you?"
+        android:textSize="35dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/txtquizheading"/>
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtquestion"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:weightSum="1"
+        android:id="@+id/radiogroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/rdbtn1"
+            android:checked="false"
+            android:textSize="25dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/rdbtn2"
+            android:checked="false"
+            android:textSize="25dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/rdbtn3"
+            android:checked="false"
+            android:textSize="25dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/rdbtn4"
+            android:checked="false"
+            android:textSize="25dp"/>
+    </RadioGroup>
+</RelativeLayout>
